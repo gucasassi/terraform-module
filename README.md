@@ -42,7 +42,7 @@ To ensure code quality and consistency, this repository uses [pre-commit](https:
 
 ### Install pre-commit
 
-asdfasd asdafsd asdfasd
+asdfasd asdafsd asdfasd asdfasd
 
 <!-- BEGIN_TF_DOCS -->
 
