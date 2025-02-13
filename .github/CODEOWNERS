@@ -1,0 +1,4 @@
+# CODEOWNERS - Defines automatic reviewers for changes in the repository
+
+# Set the DevSecOps team as the required reviewer for all changes
+* @basetis/devsecops

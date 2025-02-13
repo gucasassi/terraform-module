@@ -1,0 +1,46 @@
+# Workflow to release a new version of the project using semantic-release.
+name: release
+
+# This workflow can be triggered manually using 'workflow_dispatch'
+# or automatically on a push to the 'main' branch.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# Define the permissions for the workflow.
+# Note: The workflow needs to have write permissions to the repository to create tags and releases.
+permissions:
+  # To create a release.
+  contents: write
+  # To write comments to issues.
+  issues: write
+  # To write comments to PRs.
+  pull-requests: write
+
+# Define the jobs that will run.
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository.
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      # Step 2: Run the release process using the semantic-release action.
+      - name: Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 23.0.2
+          extra_plugins: |
+            @semantic-release/changelog@6.0.3
+            @semantic-release/git@10.0.1
+            conventional-changelog-conventionalcommits@7.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
