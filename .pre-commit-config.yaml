@@ -4,22 +4,22 @@ repos:
     hooks:
       - id: terraform-docs-go
         args: ["markdown", "table", "--output-file", "README.md", "./"]
+        stages: [post-commit]
+
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: "v1.97.3"
     hooks:
       - id: terraform_fmt
+        stages: [post-commit]
       - id: terraform_tflint
+        stages: [post-commit]
       - id: terraform_trivy
+        stages: [post-commit]
       - id: terraform_validate
+        stages: [post-commit]
+
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v4.2.1
     hooks:
       - id: commitizen
-
-  - repo: local
-    hooks:
-      - id: commitizen-check
-        name: Commit message format check
-        entry: cz check --commit-msg-file
-        language: system
         stages: [commit-msg]
