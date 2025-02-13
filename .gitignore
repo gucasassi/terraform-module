@@ -42,5 +42,3 @@ override.tf.json
 # OS generated files
 Thumbs.db
 
-# Auto-generated files
-dist/
