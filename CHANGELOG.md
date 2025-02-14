@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.1.0](https://github.com/gucasassi/terraform-module/compare/v1.0.1...v1.1.0) (2025-02-14)
+
+
+### Features
+
+* **ec2:** new instance ([db96804](https://github.com/gucasassi/terraform-module/commit/db968048cf52195f46b39feb6c941a77068c9b25))
+
 ## [1.0.1](https://github.com/gucasassi/terraform-module/compare/v1.0.0...v1.0.1) (2025-02-14)
 
 
