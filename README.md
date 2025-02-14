@@ -54,9 +54,34 @@ This repository follows a structured workflow to ensure **code quality, security
 
 ### 1 - Create new branch
 
+Follow the **GitHub flow** practice.
+
+```bash
+git switch -c feature/my-new-feature
+```
+
+Use descriptive branch names `feature`, `fix`, `chore`, `etc`.
+
 ### 2 - Make changes and commit
 
-### 3 - Run Tests
+Once the necessary changes are made, use **commitizen** to create a commit that follows **conventional commits**:
+
+```bash
+cz
+```
+
+Or manually:
+
+```bash
+git commit -m "feat: add support for new authentication method"
+```
+
+#### 💡 Tips:
+
+- Please use [atomic commits](https://dev.to/samuelfaure/how-atomic-git-commits-dramatically-increased-my-productivity-and-will-increase-yours-too-4a84).
+- Write [good commits](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) message.
+
+### 3 - Examples & Tests
 
 ### 4 - Push & Pull Request
 

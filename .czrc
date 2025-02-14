@@ -1,6 +1,4 @@
 {
   "path": "cz-conventional-changelog",
-  "scopes": [
-    "hola"
-  ]
+  "subject_case": "lower"
 }
