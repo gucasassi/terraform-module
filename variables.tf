@@ -1,4 +1,5 @@
 # Defines input variables for the module.
+
 variable "aws_region" {
   description = "AWS region to use for the test"
   type        = string

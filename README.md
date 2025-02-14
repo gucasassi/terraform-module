@@ -18,8 +18,10 @@ The following structure provides a clear organization of the **terraform module*
 │   │   ├── main.tf            # Terraform configuration for setup tests.
 │   │   ├── bucket.tftest.hcl  # Test file that execute specific test.
 │
+├── .czrc                      # Commitizen configuration.
 ├── .gitignore                 # Git ignored files.
 ├── .pre-commit-config.yaml    # Pre-commit hooks for linting and validation.
+├── .trivyignore               # List of errors to be ignored by Trivy.
 │
 ├── main.tf                    # Main terraform module.
 ├── outputs.tf                 # Defines outputs for the module.
@@ -29,7 +31,7 @@ The following structure provides a clear organization of the **terraform module*
 ├── versions.tf                # Required terraform config (provider and versions).
 ```
 
-## 🚀 Usage
+## 🚀 Getting Started
 
 To use this template, clone the repository and customize the module as needed:
 
@@ -38,49 +40,26 @@ git clone https://github.com/gucasassi/terraform-module.git
 cd terraform-module
 ```
 
-To ensure code quality and consistency, this repository uses [pre-commit](https://pre-commit.com/) hooks. Developers must install [pre-commit](https://pre-commit.com/) and initialize it before making any commits.
+To ensure code quality and consistency, this repository uses `pre-commit` and `commit-msg` hooks. Developers must install [pre-commit framework](https://pre-commit.com/) and initialize it before making any commits.
 
 ### Install pre-commit
 
 asdfasd asdafsd asdfasd asdfasd
 
-<!-- BEGIN_TF_DOCS -->
+### Install Commitizen
 
-## Requirements
+## 🔄 Workflow Guide
 
-| Name                                                                     | Version  |
-| ------------------------------------------------------------------------ | -------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | ~> 1.9.6 |
-| <a name="requirement_aws"></a> [aws](#requirement_aws)                   | >= 5.27  |
-| <a name="requirement_random"></a> [random](#requirement_random)          | >= 3.5.1 |
+This repository follows a structured workflow to ensure **code quality, security, and consistency**. Below is the recommended process to work together:
 
-## Providers
+### 1 - Create new branch
 
-| Name                                             | Version |
-| ------------------------------------------------ | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws) | 5.86.1  |
+### 2 - Make changes and commit
 
-## Modules
+### 3 - Run Tests
 
-No modules.
+### 4 - Push & Pull Request
 
-## Resources
+### 5 - Code Review & Merge
 
-| Name                                                                                                           | Type     |
-| -------------------------------------------------------------------------------------------------------------- | -------- |
-| [aws_s3_bucket.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
-
-## Inputs
-
-| Name                                                               | Description                    | Type     | Default       | Required |
-| ------------------------------------------------------------------ | ------------------------------ | -------- | ------------- | :------: |
-| <a name="input_aws_region"></a> [aws_region](#input_aws_region)    | AWS region to use for the test | `string` | `"eu-west-1"` |    no    |
-| <a name="input_bucket_name"></a> [bucket_name](#input_bucket_name) | Name of the S3 bucket          | `string` | n/a           |   yes    |
-
-## Outputs
-
-| Name                                                              | Description                  |
-| ----------------------------------------------------------------- | ---------------------------- |
-| <a name="output_bucket_arn"></a> [bucket_arn](#output_bucket_arn) | ARN of the created S3 bucket |
-
-<!-- END_TF_DOCS -->
+Following this workflow ensures that all contributions maintain high quality, security, and consistency.
