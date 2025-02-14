@@ -10,19 +10,7 @@
         "writerOpts": {
           "groupBy": "type",
           "commitGroupsSort": "title",
-          "commitsSort": ["scope", "subject"],
-          "types": [
-            { "type": "feat", "section": "🚀 Features" },
-            { "type": "fix", "section": "🐛 Bug Fixes" },
-            { "type": "docs", "section": "📖 Documentation" },
-            { "type": "chore", "hidden": true },
-            { "type": "refactor", "section": "🛠️ Code Refactoring" },
-            { "type": "perf", "section": "⚡ Performance Improvements" },
-            { "type": "test", "section": "✅ Tests" },
-            { "type": "build", "section": "🔧 Build System" },
-            { "type": "ci", "section": "🔄 Continuous Integration" },
-            { "type": "style", "hidden": true }
-          ]
+          "commitsSort": ["scope", "subject"]
         }
       }
     ],
