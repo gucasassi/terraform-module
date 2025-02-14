@@ -4,7 +4,7 @@ repos:
     hooks:
       - id: terraform-docs-go
         args: ["markdown", "table", "--output-file", "README.md", "./"]
-        stages: [post-commit]
+        stages: [pre-commit]
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: "v1.97.3"
