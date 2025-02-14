@@ -80,6 +80,7 @@ git commit -m "feat: add support for new authentication method"
 
 - Please use [atomic commits](https://dev.to/samuelfaure/how-atomic-git-commits-dramatically-increased-my-productivity-and-will-increase-yours-too-4a84).
 - Write [good commits](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) message.
+- Please always use lowercase in commit messages.
 
 ### 3 - Examples & Tests
 
