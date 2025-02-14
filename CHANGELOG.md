@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.0.0](https://github.com/gucasassi/terraform-module/compare/v1.2.0...v2.0.0) (2025-02-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* changed input variables v2
+
+### Features
+
+* testing breaking changes ([0ec0fa5](https://github.com/gucasassi/terraform-module/commit/0ec0fa50d3939a914f3eef49f974018137691bb4))
+
 ## [1.2.0](https://github.com/gucasassi/terraform-module/compare/v1.1.0...v1.2.0) (2025-02-14)
 
 
