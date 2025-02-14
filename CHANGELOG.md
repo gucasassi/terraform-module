@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.4.0](https://github.com/gucasassi/terraform-module/compare/v2.3.0...v2.4.0) (2025-02-14)
+
+
+### Features
+
+* asdafsd ([e5b7444](https://github.com/gucasassi/terraform-module/commit/e5b74449ecbb07bc181e2cc8f2b85e53dcdd74c1))
+
 ## [2.3.0](https://github.com/gucasassi/terraform-module/compare/v2.2.0...v2.3.0) (2025-02-14)
 
 
