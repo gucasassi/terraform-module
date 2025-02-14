@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.1.0](https://github.com/gucasassi/terraform-module/compare/v2.0.0...v2.1.0) (2025-02-14)
+
+
+### Features
+
+* test ([e176f75](https://github.com/gucasassi/terraform-module/commit/e176f7523ef7cc69af2d6a59f36187f51eb7e76b))
+* testing ([6ddac71](https://github.com/gucasassi/terraform-module/commit/6ddac716d3d8123548b50c24e480d32c2870a02e))
+* tESTING ([1a70a5f](https://github.com/gucasassi/terraform-module/commit/1a70a5fbdd03d366e0a7b42146427540d33535b9))
+
 ## [2.0.0](https://github.com/gucasassi/terraform-module/compare/v1.2.0...v2.0.0) (2025-02-14)
 
 
