@@ -21,6 +21,7 @@ The following structure provides a clear organization of the **terraform module*
 ├── .czrc                      # Commitizen configuration.
 ├── .gitignore                 # Git ignored files.
 ├── .pre-commit-config.yaml    # Pre-commit hooks for linting and validation.
+├── .releaserc.json            # Semantic release configuration.
 ├── .trivyignore               # List of errors to be ignored by Trivy.
 │
 ├── main.tf                    # Main terraform module.
@@ -40,17 +41,21 @@ git clone https://github.com/gucasassi/terraform-module.git
 cd terraform-module
 ```
 
-To ensure code quality and consistency, this repository uses `pre-commit` and `commit-msg` hooks. Developers must install [pre-commit framework](https://pre-commit.com/) and initialize it before making any commits.
+To ensure code quality and consistency, this repository uses `pre-commit` and `commit-msg` hooks.
 
 ### Install pre-commit
 
-asdfasd asdafsd asdfasd asdfasd
+Before you can run hooks, you need to have the pre-commit package manager installed.
+
+```bash
+pip install pre-commit
+```
 
 ### Install Commitizen
 
 ## 🔄 Workflow Guide
 
-This repository follows a structured workflow to ensure **code quality, security, and consistency**. Below is the recommended process to work together:
+This repository follows a structured workflow to ensure **code quality, security, and consistency**. Below is the recommended process to work together.
 
 ### 1 - Create new branch
 
@@ -64,7 +69,7 @@ Use descriptive branch names `feature`, `fix`, `chore`, `etc`.
 
 ### 2 - Make changes and commit
 
-Once the necessary changes are made, use **commitizen** to create a commit that follows **conventional commits**:
+Once the necessary changes are made, use **commitizen** to create a commit that follows **conventional commits**.
 
 ```bash
 cz
@@ -82,10 +87,12 @@ git commit -m "feat: add support for new authentication method"
 - Write [good commits](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) message.
 - Please always use lowercase in commit messages.
 
-### 3 - Examples & Tests
+### 3 - Push & Pull Request
 
-### 4 - Push & Pull Request
+Push your branch to the repository.
 
-### 5 - Code Review & Merge
+```bash
+git push origin feature/my-new-feature
+```
 
-Following this workflow ensures that all contributions maintain high quality, security, and consistency.
+Then, open a **Pull Request**, A DevSecOps team member will review it.
