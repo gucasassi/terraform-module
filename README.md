@@ -51,7 +51,25 @@ Before you can run hooks, you need to have the pre-commit package manager instal
 pip install pre-commit
 ```
 
+Follow the instructions to validate the installation.
+
+```bash
+pre-commit --version
+```
+
 ### Install Commitizen
+
+If you have **python** installed, you can install **commitizen** using pip.
+
+```bash
+pip install commitizen
+```
+
+Verify the installation.
+
+```bash
+cz --version
+```
 
 ## 🔄 Workflow Guide
 
