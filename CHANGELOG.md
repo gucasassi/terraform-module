@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## [2.5.2](https://github.com/gucasassi/terraform-module/compare/v2.5.1...v2.5.2) (2025-02-14)
+
+
+### Bug Fixes
+
+* el joan la liat ([ed9942c](https://github.com/gucasassi/terraform-module/commit/ed9942cf88a429169f8d61fc2ebcbfd14028b005))
+
 ## [2.5.1](https://github.com/gucasassi/terraform-module/compare/v2.5.0...v2.5.1) (2025-02-14)
 
 
